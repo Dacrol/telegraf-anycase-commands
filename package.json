@@ -1,0 +1,37 @@
+{
+  "name": "telegraf-anycase-commands",
+  "version": "1.0.0",
+  "description": "Anycase commands for Telegraf",
+  "main": "anycase.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dacrol/telegraf-anycase-commands.git"
+  },
+  "keywords": [
+    "telegraf",
+    "command",
+    "middleware",
+    "telegram"
+  ],
+  "author": "Jonas Ahrens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dacrol/telegraf-anycase-commands/issues"
+  },
+  "homepage": "https://github.com/Dacrol/telegraf-anycase-commands#readme",
+  "dependencies": {
+    "telegraf": "^3.17.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
