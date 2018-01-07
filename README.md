@@ -2,8 +2,15 @@
 
 Makes [Telegraf](http://telegraf.js.org/) bot commands case insensitive. For example /Command will be recognized as the same as /command.  
   
-Usage:
+  
+### [Installation](https://www.npmjs.com/package/telegraf-anycase-commands):
+```
+$ npm install telegraf-anycase-commands
+or
+$ yarn add telegraf-anycase-commands
+```
 
+### Usage:
 ```javascript
 const AnyCase = require('telegraf-anycase-commands')
 
