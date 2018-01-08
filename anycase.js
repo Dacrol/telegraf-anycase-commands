@@ -19,14 +19,25 @@ class TelegrafAnyCase {
     }
 
     // Force all incoming commands to be lowercase also
-    bot.use(Composer.entity('bot_command',
+    bot.use(TelegrafAnyCase.lowercase())
+    return bot
+  }
+
+  /**
+ * Middleware for converting incoming messages to lowercase
+ *
+ * @static
+ * @returns Middleware
+ * @memberof TelegrafAnyCase
+ */
+  static lowercase () {
+    return Composer.entity('bot_command',
       (ctx, next) => {
         const entity = ctx.message.entities.find(entity => entity.offset === 0 && entity.type === 'bot_command')
         const command = ctx.message.text.substring(entity.offset, entity.offset + entity.length)
         ctx.message.text = ctx.message.text.split(command).join(command.toLowerCase())
         return next(ctx)
-      }))
-    return bot
+      })
   }
 }
 
