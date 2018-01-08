@@ -27,9 +27,9 @@ const bot = AnyCase.apply(new Telegraf(process.env.BOT_TOKEN))
 const bot = AnyCase.apply(new Composer())
 ```
 
-Or if you only want to use the middleware for commands in incoming messages, without applying on commands in your code: 
+Or if you only want to use the middleware for commands in incoming messages, without applying it on commands in your code: 
 
 ```javascript
-bot.use(AnyCase.lowercase)
+bot.use(AnyCase.lowercase())
 ```
 Note that this will only convert incoming commands to lowercase, and commands have to be defined in lowercase in the code to match.
